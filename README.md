@@ -67,7 +67,6 @@
     ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/hdfs.PNG)                                              
 
     mapred-site.xml:                                                                                                 
-
     ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/mapred.PNG)                                               
     * 对 hadoop 进行格式化：输入命令 bin/hadoop namenode -format                              
     ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/bin.PNG)
