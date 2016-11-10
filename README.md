@@ -57,12 +57,13 @@
    core-site.xml：                                                            
    ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/core.PNG)                              
    hdfs-site.xml:                                                                                          
-   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/hdfs.PNG)                                              
+   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/hf.PNG)                                              
    mapred-site.xml:                                                                                                 
    ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/mapred.PNG)                                               
-   * 对 hadoop 进行格式化：输入命令 bin/hadoop namenode -format                              
+   * 对 hadoop 进行格式化：输入命令 bin/hdfs namenode -format                              
    ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/bin.PNG)
-   * 启动：输入命令 start -all.sh                                                            
+   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/hdfs.PNG)
+   * 启动：输入命令 sbin/start -all.sh                                                            
    ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/start.PNG)  
    * 验证：用 jps 查看java进程                                                            
    ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/yes.PNG)  
