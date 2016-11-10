@@ -69,7 +69,7 @@
    ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/yes.PNG)  
    * 浏览器查看：                                                            
    ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/namenode.PNG) 
-   * 如果多次格式话造成安装不成功，删除 tmp 文件                                                                           
+   * 如果多次格式话造成安装不成功，删除 tmp 文件                                                                
    ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/tmp.PNG)                                                 
 
 
