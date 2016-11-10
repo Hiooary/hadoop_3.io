@@ -10,39 +10,39 @@
   * 重启系统，可以看到登录，输入 root 账户名的界面                                                               
   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/one.PNG)
 
-  2.设置静态ip                                                                                                 
+ 2.设置静态ip                                                                                                 
   * 修改ip：                                                                                                         
   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/two.PNG)
   * 重启网卡：service network-manager restart                          
   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/three.PNG)                                            
 
-  3.修改主机名                                                                                                                  
+ 3.修改主机名                                                                                                                  
   * 输入 hostname xxx 改变主机名                                             
   * 配置文件使之永久生效：输入命令 vi /etc/hostname  将hostname改掉                                              
   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/hostname.PNG)
   * 把主机名和ip绑定：输入命令 vi /etc/hosts，增加一行 192.168.80.100 xxx(hostname)                                            
   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/hosts.PNG)
   
-  4.关闭防火墙                                                                                        
+ 4.关闭防火墙                                                                                        
   * 查看防火墙状态：输入命令 ufw status                                            
   * 开启防火墙：输入命令 ufw enable                                            
   * 关闭防火墙：输入命令 ufw disable                                            
   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/ufw.PNG)                                            
 
-  5.使用SSH进行免密码登陆                                                                                        
+ 5.使用SSH进行免密码登陆                                                                                        
   * 产生密钥文件：依次输入命令 cd ~/.ssh、ls                                                  
   * 把公钥放入 authorized_keys 文件：依次输入命令 cp ~/.ssh/id-rsa.pub ~/.ssh/authorized_keys、ls                                                                                                                
   * 登陆ssh：ssh local                                                                                          
   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/ssh.PNG)
 
-  6.安装JDK                                                                           
+ 6.安装JDK                                                                           
   * 选择安装目录：这里在 /usr/lib/ 下新建 jvm 文件夹，将解压和重命名的文件 jdk1 放入 jvm 下                              
   * 配置环境文件：输入命令 vi /etc/profile，增加如下代码，保存退出，让改动立即生效：输入命令 source /etc/profile      
   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/java.PNG)                              
   * 验证：输入命令 java -version (出现java版本则成功）                                                            
   ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/javav.PNG)                              
 
-   7.安装hadoop                                                                                                         
+  7.安装hadoop                                                                                                         
    * 选择目录解压并重命名文件：这里输入的命令依次为 tar -zxvf hadoop-2.7.3.tar.gz、mv hadoop-2.7.3                                                                                                                  
    * 修改配置文件：输入命令 vi /etc/profile ，增加如下代码，保存退出，输入 source /etc/profile 使之生效               
    ![图片](https://github.com/Hiooary/hadoop_3.io/blob/master/images/hadoop.PNG)                              
